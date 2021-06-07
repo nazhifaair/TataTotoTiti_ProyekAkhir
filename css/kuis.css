@@ -1,0 +1,81 @@
+section .kuises{
+  transition: all .5s;
+  background-color: black;
+  
+}
+
+.box{
+  padding: 20px;
+  width: 500px; 
+  min-height: 100px;
+  background-color: black;
+  box-shadow: 0 0 5px 3px rgba(0,0,0,0.3);
+  border-radius: 15px;
+  margin-left: 500px;
+  
+}
+.header1{
+  background-color: #0b58a7;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin: -20px -20px 20px;
+  border-radius: 15px 15px 0 0;
+  font-size: 20px;
+}
+
+
+#check:checked ~ label #btn{
+  left: 40px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.set.active{
+  display: block;
+  background-color: black;
+
+}
+
+
+.set h4{
+  margin: 0 0 15px;
+  font-size: 20px;
+  background-color:black;
+}
+.jawaban1{
+  position: relative;
+  margin-bottom: 10px;
+}
+.jawaban1 input{
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+
+}
+.jawaban1 span{
+  display: block;
+  padding: 8px 15px;
+  background-color: #bad0c9;
+  border-radius: 15px;
+  transition: all 0.3s ease-out;
+
+}
+.jawaban1:hover span{
+background-color: #9ab5ac;
+}
+
+.jawaban1 input:checked + span{
+  background-color: #f93c3c;
+}
+
+.jawaban1 input[valid]:checked + span{
+  background-color: green;
+  color: #fff;
+}
