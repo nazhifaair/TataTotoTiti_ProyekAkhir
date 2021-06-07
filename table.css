@@ -1,0 +1,42 @@
+.table-fixed thead,
+.table-fixed thead>th {
+    background: #000000;
+    color: #fff;
+
+}
+
+.table-fixed tbody tr td{
+    background: #fff;
+
+}
+
+.table-fixed tbody>th {
+    display: block;
+    height: 300px;
+    overflow-y: auto;
+    cursor: pointer;
+}
+
+
+.table-fixed>thead>tr>th {
+    border: 0 !important;
+}
+
+.table-fixed>tbody>tr>td:last-child {
+    border-right: 0;
+}
+
+tbody{
+    color: black;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 400px;
+    overflow: auto;
+}
+.table-wrapper-scroll-y {
+    display: block;
+
+}
+
